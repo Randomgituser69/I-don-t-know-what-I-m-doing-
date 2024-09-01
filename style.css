@@ -1,3 +1,4 @@
+/* CSS Reset by Andy Bell 👇 */
 *,
 *::before,
 *::after {
@@ -82,15 +83,50 @@ select {
 * {
   font-family: 'Red Hat Display', sans-serif;
 }
+
 body {
+  text-align: center;
+  justify-content: center;
   font-size: 1rem;
+  color: var(--Desaturated-blue);
+  background-color: var(--Pale-blue);
+  background-image: url('pattern-background-mobile.svg');
+  background-repeat: no-repeat;
 }
+.card {
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 5px;
+  gap: 5px;
+  border-radius: 10px;
+  }
+  .card h1, span {
+    color: var(--Dark-blue);
+  }
+  .add {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: var(--Very-pale-blue);
+  }
+  button {
+    background-color: var(--Bright-blue);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+  }
 .attribution { 
   font-size: 0.688; 
   text-align: center;  
 }
-
-.attribution a { 
+a { 
   color: hsl(228, 45%, 44%);
  }
+@media screen and (min-width: 37.50rem) {
 
+}
