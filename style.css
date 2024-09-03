@@ -20,8 +20,8 @@ dd {
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
+ul[role="list"],
+ol[role="list"] {
   list-style: none;
 }
 
@@ -60,9 +60,9 @@ select {
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
-   scroll-behavior: auto;
+    scroll-behavior: auto;
   }
-  
+
   *,
   *::before,
   *::after {
@@ -73,19 +73,19 @@ select {
   }
 }
 /* CSS Styles 👇 */
-:root { 
---Pale-blue: hsl(225, 100%, 94%);
---Bright-blue: hsl(245, 75%, 52%);
---Very-pale-blue: hsl(225, 100%, 98%);
---Desaturated-blue: hsl(224, 23%, 55%);
---Dark-blue: hsl(223, 47%, 23%);
+:root {
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
 }
 * {
-  font-family: 'Red Hat Display', sans-serif;
+  font-family: "Red Hat Display", sans-serif;
 }
 
 body {
-  display: flex; 
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
@@ -93,12 +93,13 @@ body {
   font-size: 1rem;
   color: var(--Desaturated-blue);
   background-color: var(--Pale-blue);
-  background-image: url('pattern-background-mobile.svg');
+  background-image: url("pattern-background-mobile.svg");
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .card {
-  display: flex; 
+  display: flex;
   flex-direction: column;
   align-items: center;
   margin-inline: auto;
@@ -109,17 +110,14 @@ body {
   gap: 5px;
   border-radius: 10px;
 }
-.top {
-  background-image: url(illustration-hero.svg);
-  background-size: cover;
+.card h2,
+span {
+  color: var(--Dark-blue);
 }
-  .card h2, span {
-    color: var(--Dark-blue);
-  }
-  .content {
-    padding: 5px;
-  }
-  .add {
+.content {
+  padding: 5px;
+}
+.add {
   display: flex;
   flex-direction: row;
   justify-self: unset;
@@ -128,21 +126,20 @@ body {
   padding: 5px;
   border-radius: 10px;
   background-color: var(--Very-pale-blue);
-  }
-  button {
-    background-color: var(--Bright-blue);
-    color: white;
-    border-radius: 10px;
-    border: none;
-    padding: 5px;
-  }
-.attribution { 
-  font-size: 0.688; 
-  text-align: center;  
 }
-a { 
+button {
+  background-color: var(--Bright-blue);
+  color: white;
+  border-radius: 10px;
+  border: none;
+  padding: 5px;
+}
+.attribution {
+  font-size: 0.688;
+  text-align: center;
+}
+a {
   color: hsl(228, 45%, 44%);
- }
-@media screen and (min-width: 37.50rem) {
-
+}
+@media screen and (min-width: 37.5rem) {
 }
