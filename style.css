@@ -105,8 +105,7 @@ body {
   margin-inline: auto;
   overflow: hidden;
   background-color: white;
-  width: 300px;
-  padding: 5px;
+  width: clamp(200px, 90%, 350px);
   gap: 5px;
   border-radius: 10px;
 }
