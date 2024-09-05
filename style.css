@@ -107,7 +107,7 @@ h2 {
   margin-inline: auto;
   overflow: hidden;
   background-color: white;
-  max-width: 19.45rem;
+  max-width: 22rem;
   gap: 5px;
   border-radius: 10px;
 }
@@ -124,7 +124,7 @@ h2 {
   font-weight: 900;
 }
 .content {
-  padding: 10px 20px;
+  padding: 20px, 40px;
 }
 .content p {
   font-weight: 500;
@@ -144,6 +144,15 @@ button {
   border: none;
   padding: 10px;
 }
+button:hover {
+  background-color: #716BF1;
+}
+.add a {
+  background-color: var(--Bright-blue);
+}
+.add a:hover {
+  background-color: #716BF1;
+}
 .payment {
   display: flex;
   flex-direction: column;
@@ -158,12 +167,13 @@ button {
 a {
   color: hsl(228, 45%, 44%);
 }
-@media screen and (min-width: 40rem) {
+
+@media (width < 37.5rem) { 
   .card {
-    max-width: 22rem;
+    max-width: 19.45rem;
   }
   .content {
-    padding: 20px 40px;
+    padding: 10px 20px;
     text-align: center;
   }
 }
