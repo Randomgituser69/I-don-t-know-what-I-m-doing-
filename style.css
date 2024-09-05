@@ -119,7 +119,7 @@ h2 {
   font-weight: 500;
   color: var(--Desaturated-blue);
 }
-.payment span {
+.payment a {
   color: var(--Desaturated-blue);
   font-weight: 900;
 }
@@ -148,7 +148,7 @@ button:hover {
   background-color: #716BF1;
 }
 .add a {
-  background-color: var(--Bright-blue);
+  color: var(--Bright-blue);
 }
 .add a:hover {
   background-color: #716BF1;
@@ -164,7 +164,7 @@ button:hover {
   font-size: 0.688;
   text-align: center;
 }
-a {
+.attribution a {
   color: hsl(228, 45%, 44%);
 }
 
