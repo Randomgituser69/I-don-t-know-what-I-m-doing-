@@ -97,7 +97,9 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+h2 {
+  color: var(--Dark-blue)
+}
 .card {
   display: flex;
   flex-direction: column;
@@ -105,23 +107,32 @@ body {
   margin-inline: auto;
   overflow: hidden;
   background-color: white;
-  width: clamp(200px, 90%, 350px);
+  max-width: 19.45rem;
   gap: 5px;
   border-radius: 10px;
 }
-.card h2,
-span {
+.add span {
   color: var(--Dark-blue);
+  font-weight: 700;
+}
+.add p {
+  font-weight: 500;
+  color: var(--Desaturated-blue);
+}
+.payment span {
+  color: var(--Desaturated-blue);
+  font-weight: 900;
 }
 .content {
-  padding: 5px;
+  padding: 10px 20px;
+}
+.content p {
+  font-weight: 500;
 }
 .add {
   display: flex;
   flex-direction: row;
-  justify-self: unset;
-  justify-content: unset;
-  gap: 5px;
+  gap: 13px;
   padding: 5px;
   border-radius: 10px;
   background-color: var(--Very-pale-blue);
@@ -131,8 +142,15 @@ button {
   color: white;
   border-radius: 10px;
   border: none;
-  padding: 5px;
+  padding: 10px;
 }
+.payment {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 5px;
+}
+
 .attribution {
   font-size: 0.688;
   text-align: center;
@@ -140,5 +158,12 @@ button {
 a {
   color: hsl(228, 45%, 44%);
 }
-@media screen and (min-width: 37.5rem) {
+@media screen and (min-width: 40rem) {
+  .card {
+    max-width: 22rem;
+  }
+  .content {
+    padding: 20px 40px;
+    text-align: center;
+  }
 }
