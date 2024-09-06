@@ -135,8 +135,8 @@ a {
 .add {
   display: flex;
   flex-direction: row;
-  gap: 12px;
-  padding: 5px;
+  gap: 36px;
+  padding: 10px;
   border-radius: 10px;
   background-color: var(--Very-pale-blue);
 }
@@ -180,5 +180,11 @@ button:hover {
   .content {
     padding: 10px 20px;
     text-align: center;
+  }
+  .add {
+    gap: 19px;
+  }
+  button {
+    width: 16rem;
   }
 }
