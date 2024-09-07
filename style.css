@@ -93,12 +93,12 @@ body {
   font-size: 1rem;
   color: var(--Desaturated-blue);
   background-color: var(--Pale-blue);
-  background-image: url("pattern-background-mobile.svg");
+  background-image: url("pattern-background-desktop.svg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 h2 {
-  color: var(--Dark-blue)
+  color: var(--Dark-blue);
 }
 a {
   text-decoration: none;
@@ -136,7 +136,7 @@ a {
   display: flex;
   flex-direction: row;
   gap: 36px;
-  padding: 10px;
+  padding: 10px 5px;
   border-radius: 10px;
   background-color: var(--Very-pale-blue);
 }
@@ -147,16 +147,15 @@ button {
   border: none;
   padding: 10px;
   width: 18rem;
-  
 }
 button:hover {
-  background-color: #716BF1;
+  background-color: #716bf1;
 }
 .add a {
   color: var(--Bright-blue);
 }
 .add a:hover {
-  color: #716BF1;
+  color: #716bf1;
 }
 .payment {
   display: flex;
@@ -173,7 +172,12 @@ button:hover {
   color: hsl(228, 45%, 44%);
 }
 
-@media (width < 37.5rem) { 
+@media (width < 37.5rem) {
+  body {
+    background-image: url("pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
   .card {
     max-width: 19.45rem;
   }
